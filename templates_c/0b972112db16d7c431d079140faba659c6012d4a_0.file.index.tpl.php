@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-12-12 15:39:16
+/* Smarty version 3.1.34-dev-7, created on 2020-12-13 01:11:39
   from 'C:\xampp\htdocs\pagination-demo\views\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fd4d614e804e2_50980675',
+  'unifunc' => 'content_5fd55c3b2488c1_89525934',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0b972112db16d7c431d079140faba659c6012d4a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pagination-demo\\views\\index.tpl',
-      1 => 1607783947,
+      1 => 1607818297,
       2 => 'file',
     ),
   ),
@@ -23,11 +23,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5fd4d614e804e2_50980675 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fd55c3b2488c1_89525934 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="container">
-  <h1>Pagination Demo</h1>
+  <h1 class="mt-5">Pagination Demo</h1>
   <div class="row">
   <div class="col">
     <ol>
