@@ -1,11 +1,11 @@
 <?php 
 
-class Pagination
+class Helpers
 {
   /**
    * Simple pagination example
    */
-  public static function getPagination($limit = 10, $offset = 0, $current_offset = 0, $total_rows = 0, $url = "") {
+  public static function Pagination($limit = 10, $offset = 0, $current_offset = 0, $total_rows = 0, $url = "") {
     $result = [];
     $error = ($limit === 0 OR $url === "") ? 1 : 0; 
 

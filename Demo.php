@@ -1,8 +1,8 @@
 <?php 
-  require 'helpers/Pagination.php';
+require 'Helpers.php';
 
-class Demo {
-
+class Demo 
+{
   protected $pdo;
 
   public function __construct()
@@ -41,8 +41,9 @@ class Demo {
     $stmt = $this->pdo->query("SELECT COUNT(id) FROM posts");
     $total_rows = $stmt->fetchColumn();
 
-    $pagination = Pagination::getPagination($limit, $offset, $current_offset, $total_rows, $url);
+    $pagination = Helpers::Pagination($limit, $offset, $current_offset, $total_rows, $url);
 
+    // Typical database query
     $stmt = $this->pdo->query("SELECT title FROM posts LIMIT {$pagination['limit']} OFFSET {$pagination['offset']}");
     $titles = [];
     while ($r = $stmt->fetch()) {
@@ -50,7 +51,7 @@ class Demo {
     }
 
     $results['titles'] = $titles;
-    $results['pagination_data'] = $pagination;
+    $results['pagination_data'] = $pagination; // Expects pagination_data as naming convention used by Smarty template
 
     return $results;
   }
